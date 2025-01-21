@@ -35,13 +35,10 @@ df=df[["/BEV1/CLANZVP", "ANLN1", "ERDAT", "AEDAT","ZUGDT","AKTIV","MCOA1","Date_
 
 df.to_csv("E:\RevoQuant\SAP_config_EDA\EDA_15_1_Execption_updated.csv",index=False)
 
-
+#############################################################################################################
 
 
 ### 15.2
-import pandas as pd
-import numpy as np
-
 # Read the Excel file
 data = pd.read_excel(r"E:\RevoQuant\SAP_config_EDA\EDA15_inputFile.xlsx")
 
@@ -58,9 +55,7 @@ data=data[["/BEV1/CLANZVP", "ANLN1", "ERDAT", "AEDAT","ZUGDT","AKTIV","MCOA1","E
 # Save the resulting DataFrame to a CSV file
 data.to_csv(r"E:\RevoQuant\SAP_config_EDA\EDA_15_2_Exception_updated.csv", index=False)
 
-
-
-import pandas as pd
+###########################################################################################################
 
 # Read the two CSV files
 df1 = pd.read_csv("E:\RevoQuant\SAP_config_EDA\EDA_15_1_Execption_updated.csv")  # Replace with your first CSV file path
